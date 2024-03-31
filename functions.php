@@ -12,7 +12,8 @@ function kwsmile(){
 /**
  * Gets smiles HTML for specified textarea.
  *
- * @param  string $textarea_id textarea ID
+ * @param string $textarea_id  textarea ID
+ *
  * @return string HTML
  */
 function kws_get_smiles_html( $textarea_id ){
@@ -22,7 +23,8 @@ function kws_get_smiles_html( $textarea_id ){
 /**
  * Convert smiles code to HTML IMG in passed content.
  *
- * @param  string $content Content where need smiles convert
+ * @param string $content  Content where need smiles convert
+ *
  * @return string Filtered content
  */
 function kws_convert_smiles( $content ){
@@ -32,6 +34,9 @@ function kws_convert_smiles( $content ){
 
 // DEPRECATED --------------
 
+/**
+ * @deprecated
+ */
 function kama_sm_get_smiles_code( $textarea_id ){
 	_deprecated_function( __FUNCTION__, '1.9.0', 'kws_get_smiles_html()' );
 

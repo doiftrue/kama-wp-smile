@@ -1,36 +1,36 @@
 === Kama WP Smiles ===
-Stable tag: trunk
-Tested up to: 5.6
+Stable tag: 1.9.13
+Tested up to: 6.4.3
 Contributors: Tkama
-Official website: http://wp-kama.ru?p=185
-Requires at least: 3.0.1
+Official website: http://wp-kama.ru/185
+Requires at least: 4.7.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags: comments, smiles, posts, optimization
+Tags: comments, smiles, stickers
 
-Replace WP smilies (emoticons) to pretty dynamic one. Automaticaly add smiley block to comment form and in visual/HTML editor on admin. You can set your own package of smiles or select preferred from existing list.
+Replace WordPress emoticons with dynamic smileys, adding a smiley block to comment forms and admin editor. Pick from existing or create custom sets.
 
 
 == Description ==
 
-Kama WP Smiles adds block with smiles to comment form in your theme and to HTML/visual editor in admin panel. All that allows you easily add smiles into comment or post content. The plugin replace original WordPress emoticons by new pretty dinamic one (gif).
+Kama WP Smiles enhances your WordPress experience by seamlessly incorporating a smiley block into the comment form of your theme and the HTML/visual editor in the admin panel. This feature simplifies the process of adding smiles to your comments or posts. The plugin replaces the standard WordPress emoticons with lively and animated GIF smileys.
 
-With Kama WP Smiles visitors of you blog will have easy instrument to add smiles in comments and you will have opportunity to add smiles while writing posts or answer comments.
+With Kama WP Smiles, visitors to your blog can effortlessly insert smiles into their comments, while you gain the ability to enhance your posts or respond to comments with smiles of your own.
 
-On plugin settings page, you can choose which of accessible smiles will appear in the smiles block. And you can tune smiles special code like :) which will be replaced on smile image in content. Moreover you can add your own package of any images and use it as smiles.
+In the plugin settings, you have the option to select which smileys appear in the smiley block. Additionally, you can customize the special codes, such as :) , which trigger the replacement with smiley images in your content. Furthermore, you have the freedom to create and utilize your own set of smiley images.
 
-If you don't enjoy the plugin, you can just delete it. On uninstall, plugin will clean up after itself.
+Should you decide the plugin isn't for you, uninstalling it is a breeze. The plugin ensures a clean removal process, leaving no trace behind.
 
-[Official plugin page](http://wp-kama.ru/?p=185)
+[Plugin page](http://wp-kama.ru/185)
 
 
 
 
 == Frequently Asked Questions ==
 
-= Plugin don't add smile block to comment form =
+= Plugin don't add smile block for the comment form =
 
-May be, you comment form textarea HTML tag have not default ID attribute. Specify comment form ID attribute tag on settings page. Default is `comment`
+Maybe, you comment form textarea HTML tag have not default ID attribute. Specify comment form ID attribute tag on settings page. Default is `comment`
 
 
 = I have HTML tag &lt;var&gt; where it needn't replace smile code to smile image =
@@ -59,56 +59,10 @@ To add smile block to comment form or any other textarea form. Leave empty comme
 
 
 
-===== TODO =====
-
-Поддержка Quick Chat и BbPress
-
-На мой взгляд - это:
-
-1. Кнопки (в настройках) > Раскрытие списка смайлов (выпадающий список) > при подведении к значку ИЛИ нажатию на него (или так или так) — (переключатель в настройках!!!)
-
-— Когда нажимаешь на значок смайла > раскрывается меню > !!! НЕ РЕАЛИЗОВАНО !!!!
-(не всегда удобно когда подводишь и раскрывается список, порой даже мешает)
-
-
-2.
-— Выпадающий список > наверное тоже самое что пункт 1. только со значком рядом " стрелочка вниз " - (">" только повёрнутая вниз) —---( справа или слева, лучше справа)
-
-Т.е Отображается смайл и рядом с ним значок (">" только повёрнутая вниз) в виде кнопки (НЕ КРИТИЧНО при полной реализации п.1) - такой переключатель в настройках тоже был бы многим удобен и полезен (или так или так).
-
-
-4.
-— Возможность (в настройках плагина) Расширять и сужать сетку смайлов, при раскрытии меню смайлов = отображать количество колонок и столбцов !!!
-Т.е - (нажимаешь на смайл или подводишь мышь к нему) = > отображение сетки = (8 столбцов + 16 строк) или (16 столбцов + 16 строк) ..... например (1x2-20) (1-20x1) (2x20) (3x4) (4x3) (5x32) (16x20) итд итп! т.е произвольные параметры в настройках плагина (кол-во столбцов = " X " ; кол-во строк = " X ") !!!
-
-
-8.
-- Безопасность:
-
-/wp-content/plugins/kama-wp-smile/smiles/*.gif
-Папки:
-/wp-content - есть возможность скрыть с
-помощью сторонних плагинов
-/plugins/ - есть возможность скрыть с помощью сторонних плагинов
-
-/kama-wp-smile/smiles/*.gif - Название плагина даёт определить по коду страницы или открытию смайла в новом что установлен wordpress.
-
-Рекомендую сменить название (Убрать wp из имени папки, .... не плагина!)
-- Сделать вообще просто папку Smile или (Kama)
-
-Например /wp-content/plugins/smile/smiles/*.gif - так точно сразу не определишь!!!
-Например /wp-content/plugins/kama/smiles/*.gif - так точно сразу не определишь!!!ъ
-т.е будет в коде отображаться /kama/smiles/*.gif
-т.е будет в коде отображаться *****/*****/kama/smiles/*.gif
-
-Спасибо за внимание.
-
-
-
-
 == Changelog ==
 
 = 1.9.13 =
+* UPD: WP Version up.
 * NEW: filter `kwsmile__insert_smile_space`.
 
 = 1.9.11 =

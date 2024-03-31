@@ -5,7 +5,7 @@ class Kama_WP_Smiles_Admin extends Kama_WP_Smiles {
 
 	private static $access_cap = 'manage_options';
 
-	function __construct(){
+	public function __construct(){
 		parent::__construct();
 
 		add_action( 'admin_menu', [ $this, 'admin_page' ] );

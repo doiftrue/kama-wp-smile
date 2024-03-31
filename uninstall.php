@@ -6,7 +6,7 @@ if( ! defined( 'KWS_PLUGIN_PATH' ) ){
 	define( 'KWS_PLUGIN_PATH', plugin_dir_path( __FILE__ ) );
 
 	require_once __DIR__ . '/functions.php';
-	require_once __DIR__ . '/class.Kama_WP_Smiles.php';
+	require_once __DIR__ . '/Kama_WP_Smiles.php';
 }
 
 kws_unistall_init();
