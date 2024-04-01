@@ -1,7 +1,6 @@
 <?php
 
-
-class Kama_WP_Smiles_Admin extends Kama_WP_Smiles {
+class Kama_WP_Smiles_Admin extends Kama_WP_Smiles_Plugin {
 
 	private static $access_cap = 'manage_options';
 
@@ -69,7 +68,7 @@ class Kama_WP_Smiles_Admin extends Kama_WP_Smiles {
 	}
 
 	function set_def_options(){
-		return update_option( Kama_WP_Smiles::OPT_NAME, $this->def_options() );
+		return update_option( Kama_WP_Smiles_Plugin::OPT_NAME, $this->def_options() );
 	}
 
 	protected function def_options(){
@@ -203,7 +202,7 @@ class Kama_WP_Smiles_Admin extends Kama_WP_Smiles {
 			$this->opt[ $key ] = $_val;
 		}
 
-		update_option( Kama_WP_Smiles::OPT_NAME, $this->opt );
+		update_option( Kama_WP_Smiles_Plugin::OPT_NAME, $this->opt );
 
 		$this->_set_pack_data();
 	}
@@ -277,7 +276,7 @@ class Kama_WP_Smiles_Admin extends Kama_WP_Smiles {
 
 	function activation(){
 
-		if( ! get_option( Kama_WP_Smiles::OPT_NAME ) )
+		if( ! get_option( Kama_WP_Smiles_Plugin::OPT_NAME ) )
 			$this->set_def_options();
 
 	}

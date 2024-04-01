@@ -1,6 +1,6 @@
 <?php
 
-class Kama_WP_Smiles {
+class Kama_WP_Smiles_Plugin {
 
 	const OPT_NAME = 'kwsmile_opt';
 
@@ -19,7 +19,7 @@ class Kama_WP_Smiles {
 
 	static function instance(){
 
-		! self::$instance && self::$instance = ( is_admin() && ! defined('DOING_AJAX') ) ? new Kama_WP_Smiles_Admin() : new self;
+		self::$instance || self::$instance = ( is_admin() && ! defined('DOING_AJAX') ) ? new Kama_WP_Smiles_Admin() : new self;
 
 		return self::$instance;
 	}

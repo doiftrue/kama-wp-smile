@@ -6,7 +6,7 @@ if( ! defined( 'KWS_PLUGIN_PATH' ) ){
 	define( 'KWS_PLUGIN_PATH', plugin_dir_path( __FILE__ ) );
 
 	require_once __DIR__ . '/functions.php';
-	require_once __DIR__ . '/Kama_WP_Smiles.php';
+	require_once __DIR__ . '/Kama_WP_Smiles_Plugin.php';
 }
 
 kws_unistall_init();
@@ -15,10 +15,10 @@ function kws_unistall_init(){
 
 	delete_option( 'kwsmile_version' );
 
-	Kama_WP_Smiles::_set_sm_start_end( get_option( Kama_WP_Smiles::OPT_NAME ) );
+	Kama_WP_Smiles_Plugin::_set_sm_start_end( get_option( Kama_WP_Smiles_Plugin::OPT_NAME ) );
 
 	// delete options
-	delete_option( Kama_WP_Smiles::OPT_NAME );
+	delete_option( Kama_WP_Smiles_Plugin::OPT_NAME );
 
 	// delete smiles in content
 	_kws_delete_smiles_in_content();
@@ -72,7 +72,7 @@ function _kws_delete_smiles_in_content(){
 
 			if( $val = preg_replace( '/[^a-zA-Z0-9_-]/', '', $val ) ){
 
-				$smile_code = Kama_WP_Smiles::$sm_start . $val . Kama_WP_Smiles::$sm_end;
+				$smile_code = Kama_WP_Smiles_Plugin::$sm_start . $val . Kama_WP_Smiles_Plugin::$sm_end;
 
 				$REPLACE_patt = str_replace(
 					[ '__FIELDNAME__', '__SMILECODE__' ],

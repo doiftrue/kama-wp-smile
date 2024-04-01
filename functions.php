@@ -3,10 +3,10 @@
 /**
  * Gets plugin instance.
  *
- * @return Kama_WP_Smiles|Kama_WP_Smiles_Admin
+ * @return Kama_WP_Smiles_Plugin|Kama_WP_Smiles_Admin
  */
 function kwsmile(){
-	return Kama_WP_Smiles::instance();
+	return Kama_WP_Smiles_Plugin::instance();
 }
 
 /**

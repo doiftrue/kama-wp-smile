@@ -1,5 +1,5 @@
 === Kama WP Smiles ===
-Stable tag: 1.9.13
+Stable tag: 1.9.14
 Tested up to: 6.4.3
 Contributors: Tkama
 Official website: http://wp-kama.ru/185

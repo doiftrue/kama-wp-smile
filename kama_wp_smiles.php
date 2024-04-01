@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Kama WP Smiles
- * Description: Replace WP smilies. You can easily set your own package of smiles or select preferred from existing list.
+ * Description: Replace WP smiles. You can easily set your own package of smiles or select preferred from existing list.
  *
  * Author: Kama
  * Author URI: http://wp-kama.ru/
@@ -12,7 +12,7 @@
  *
  * Requires PHP: 5.6
  *
- * Version: 1.9.13
+ * Version: 1.9.14
  */
 
 $data = get_file_data( __FILE__, [ 'ver' => 'Version', 'lang_dir' => 'Domain Path' ] );
@@ -22,7 +22,7 @@ define( 'KWS_PLUGIN_PATH', plugin_dir_path( __FILE__ ) );
 define( 'KWS_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
 
 require_once __DIR__ . '/functions.php';
-require_once __DIR__ . '/Kama_WP_Smiles.php';
+require_once __DIR__ . '/Kama_WP_Smiles_Plugin.php';
 
 if( is_admin() && ! defined( 'DOING_AJAX' ) ){
 	require_once __DIR__ . '/Kama_WP_Smiles_Admin.php';
